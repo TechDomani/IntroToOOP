@@ -4,10 +4,14 @@
 	{
 		static void Main()
 		{
-			// Call objects and static class
-			
-			Console.WriteLine(CircleProcedural.CalcArea(4));
-			Console.WriteLine(CircleProcedural.CalcCircumference(4));
+			// Call cat objects
+			Cat cat1 = new ("John", "Applaws");
+			Cat cat2 = new ("Garfield", "Lasagna");
+			List<Cat> cats = new() {cat1, cat2};
+			foreach (Cat cat in cats)
+			{
+				Console.WriteLine(cat.Greet());
+			}
 		}
 	}
 }
